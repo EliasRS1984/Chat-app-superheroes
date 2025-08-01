@@ -1,0 +1,96 @@
+
+.message-form-container { 
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.message-form-container > div {
+    flex: 1; 
+    display: flex; 
+    align-items: center; 
+}
+
+.message-form-container label {
+    display: none; 
+}
+
+.message-form-container input[type="text"] {
+    flex: 1; 
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px; 
+    font-size: 16px;
+    outline: none; 
+}
+
+.message-form-container input[type="text"]:focus {
+    border-color: #007bff; 
+}
+
+.message-form-container button[type="submit"] { 
+    padding: 10px 15px; 
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 20px; 
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    white-space: nowrap; 
+    flex-shrink: 0; 
+}
+
+.message-form-container button[type="submit"]:hover {
+    background-color: #0056b3; 
+}
+
+/* --- Media Queries para Responsividad --- */
+
+/* Ajustes para pantallas pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    .message-form-container {
+        padding: 8px; 
+        gap: 6px; 
+    }
+
+    .message-form-container input[type="text"] {
+        padding: 7px 10px; 
+        font-size: 14px; 
+    }
+
+    .message-form-container button[type="submit"] {
+        padding: 7px 10px; 
+        font-size: 14px; 
+    }
+}
+
+/* Para pantallas 480px */
+@media (max-width: 480px) {
+    .message-form-container {
+        flex-wrap: wrap; 
+        justify-content: center; 
+        padding: 8px 10px; 
+    }
+
+    .message-form-container > div { 
+        flex: 1 1 100%; 
+        margin-bottom: 5px; 
+    }
+
+    .message-form-container input[type="text"] {
+        width: 100%; 
+        margin-bottom: 0; 
+    }
+
+    .message-form-container button[type="submit"] {
+        flex: 0 0 auto; 
+        width: 100%; 
+        max-width: 180px; 
+        padding: 8px 15px; 
+    }
+}

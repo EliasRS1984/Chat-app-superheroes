@@ -1,0 +1,98 @@
+
+.message-container {
+    display: flex; 
+    align-items: flex-end; 
+    margin-bottom: 15px; 
+    max-width: 80%; 
+    position: relative; 
+}
+
+.my-message {
+    justify-content: flex-end; 
+    margin-left: auto; 
+    padding-right: 10px; 
+}
+
+.other-message {
+    justify-content: flex-start; 
+    margin-right: auto; 
+    padding-left: 10px; 
+}
+
+.message-bubble {
+    padding: 12px 18px; 
+    border-radius: 20px; 
+    max-width: 100%; 
+    word-wrap: break-word; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    position: relative; 
+}
+
+.my-message .message-bubble {
+    background-color: #007bff; 
+    color: white; 
+    border-bottom-right-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.other-message .message-bubble {
+    background-color: #FFC107; 
+    color: #333; 
+    border-bottom-left-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message-bubble p {
+    margin: 0; 
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.message-info {
+    font-size: 0.75em;
+    color:  rgba(255, 255, 255, 0.8); 
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    gap: 8px; 
+}
+
+.other-message .message-info {
+    color: rgba(0, 0, 0, 0.6); 
+}
+
+.message-avatar {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin: 0 8px; 
+    border: 2px solid #6c757d; 
+    flex-shrink: 0; 
+}
+
+.delete-button {
+    background-color: transparent; 
+    border: none;
+    color: rgba(255, 255, 255, 0.7); 
+    font-size: 0.9em;
+    cursor: pointer;
+    padding: 2px 5px;
+    border-radius: 3px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.other-message .delete-button {
+    color: rgba(0, 0, 0, 0.5); 
+}
+
+.delete-button:hover {
+    color: white; 
+    background-color: rgba(255, 0, 0, 0.5); 
+}
+
+.other-message .delete-button:hover {
+    color: white;
+    background-color: rgba(255, 0, 0, 0.6);
+}
